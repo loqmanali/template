@@ -1,0 +1,214 @@
+:root {
+    --main--color: #ff9800;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Coming Soon', cursive;
+    /* font-family: 'Metal Mania', cursive; */
+}
+
+
+/* Start Setting Box */
+
+.setting-box {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #fff;
+    width: 200px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: 0.3;
+}
+
+.setting-box.open {
+    left: 0;
+}
+
+.setting-box .toggle-setting {
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.setting-box .toggle-setting .fa-gear {
+    padding: 8px 0;
+    width: 30px;
+    font-size: 20px;
+}
+
+.setting-box .option-box {
+    padding: 10px;
+    text-align: center;
+    background-color: #555;
+    margin: 10px;
+}
+
+.setting-box .option-box h1 {
+    color: #fff;
+}
+
+.setting-box .option-box h4 {
+    margin: 0;
+    color: #fff;
+}
+
+.setting-box .option-box .color-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.setting-box .option-box .color-list li {
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.setting-box .option-box .color-list li.active {
+    opacity: 1;
+    border-color: #fff;
+    border: 3px solid #fff;
+}
+
+.setting-box .option-box .color-list li:first-child {
+    background-color: #ff9800;
+}
+
+.setting-box .option-box .color-list li:nth-child(2) {
+    background-color: #00f225;
+}
+
+.setting-box .option-box .color-list li:nth-child(3) {
+    background-color: #0084ff;
+}
+
+.setting-box .option-box .color-list li:nth-child(4) {
+    background-color: #8400ff;
+}
+
+.setting-box .option-box .color-list li:nth-child(5) {
+    background-color: #ff00d4;
+}
+
+
+.setting-box .random-background .yes,
+.setting-box .random-background .no {
+    width: 55px;
+    background-color: #009688;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.setting-box .random-background span.active {
+    opacity: 1;
+}
+
+
+/* End Setting Box */
+
+
+/* Start Landing Page */
+
+.landing-page {
+    min-height: 100vh;
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing-page .overlay {
+    background-color: #00000063;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+
+.header .logo {
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.header .links {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+.header .links li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.header .links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header .links li a:hover,
+.header .links li a.active {
+    color: var(--main--color);
+}
+
+.introduction-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.introduction-text h1 {
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+
+.introduction-text h1 span {
+    color: var(--main--color);
+}
+
+.introduction-text p {
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+/* End Landing Page */
